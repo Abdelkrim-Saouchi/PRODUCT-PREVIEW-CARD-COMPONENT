@@ -29,7 +29,7 @@ body {
 .card {
     background-color: var(--white);
     display: flex;
-    width: 40%;
+    max-width: 40%;
     height: 40%;
     border-radius: 12px;
    
@@ -128,11 +128,11 @@ h2 {
     body {
         padding: 10% 0;
     }
-    
+
     .card {
         flex-direction: column;
         height: 80%;
-        width: 80%;
+        max-width: 80%;
     }
 
     .container-image .img-1 {

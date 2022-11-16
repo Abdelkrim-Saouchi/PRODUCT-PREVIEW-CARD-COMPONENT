@@ -21,7 +21,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     background-color: var(--cream);
     
 }
@@ -29,24 +29,36 @@ body {
 .card {
     background-color: var(--white);
     display: flex;
-    max-width: 35vw;
+    width: 40%;
+    height: 40%;
     border-radius: 12px;
    
 }
 
-.card img {
-    max-width: 50%;
+.container-image {
+    flex: 1;
+    
+}
+
+.container-image img {
+    height: 100%;
+    width: 100%;
     border-radius: 12px 0 0 12px;
 }
 
+
+
 .container-texts {
+    flex: 1;
     padding: 1.88rem;
     display: flex;
     flex-direction: column;
-    gap: 1.88rem;
+    gap: 1.5rem;
 }
 
+
 h6 {
+    flex-grow: 1;
     font-family: var(--font-2);
     font-weight: 700;
     letter-spacing: 0.31rem;
@@ -54,19 +66,23 @@ h6 {
 }
 
 h2 {
+    flex-grow: 1;
     font-family: var(--font-1);
     font-weight: 700;
     color: var(--very-dark-blue);
 }
 
 .desc {
+    flex-grow: 1;
     font-family: var(--font-2);
     font-weight: 500;
     font-size: 0.88rem;
+    line-height: 1.5;
     color: var(--dark-greyish-blue); 
 }
 
 .price {
+    flex-grow: 1;
     font-family: var(--font-1);
     font-weight: 700;
     color: var(--dark-cyan);
@@ -82,6 +98,8 @@ h2 {
 }
 
 .add-btn {
+    flex-grow: 1;
+    
     background-color: var(--dark-cyan);
     color: var(--white);
     font-family: var(--font-2);
@@ -89,6 +107,8 @@ h2 {
     padding: 1rem 2.5rem;
     text-align: center;
     border-radius: 12px;
+    display: flex;
+    justify-content: center;
 }
 
 .add-btn img {

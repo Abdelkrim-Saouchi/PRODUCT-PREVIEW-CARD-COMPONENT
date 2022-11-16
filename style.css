@@ -46,6 +46,10 @@ body {
     border-radius: 12px 0 0 12px;
 }
 
+.container-image .img-2 {
+    display: none;
+}
+
 
 
 .container-texts {
@@ -118,4 +122,25 @@ h2 {
 .add-btn:hover {
     background-color: hsl(158deg 36% 15%);
     cursor:pointer;
+}
+
+@media (max-width: 1000px) {
+    body {
+        padding: 10% 0;
+    }
+    
+    .card {
+        flex-direction: column;
+        height: 80%;
+        width: 80%;
+    }
+
+    .container-image .img-1 {
+        display: none;
+    }
+
+    .container-image .img-2 {
+        display: block;
+        border-radius: 12px 12px 0 0;
+    }
 }
